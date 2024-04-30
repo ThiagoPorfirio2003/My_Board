@@ -1,0 +1,7 @@
+{
+  "name": "MyBoard",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
