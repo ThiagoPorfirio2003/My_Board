@@ -1,17 +1,16 @@
-<ion-content>
+<ion-content [fullscreen]="true">
   <section class="splashScreen">
-    @if (this.showText) 
-    {
-      <div class="slide-in-top">
-        <h1 class="myDivision">4to A</h1>
-        <h1 class="myName">Thiago Porfirio</h1>
-      </div>
+    <header class="text-pop-up-top">
+      <h1>4to A</h1>
+    </header>
 
-    }
+    <div class="iconContainer jello-horizontal vibrate-3">
+      <img src="../../../../../assets/SplashArt/MyLanguages_NoBack.png">
+    </div>
 
-
-    <img [ngClass]="this.imageClass" src="../../../../../assets/SplashArt/My_Languages.png">
-    
+    <footer class="text-pop-up-bottom">
+      <h2>Thiago Porfirio</h2>
+    </footer>
   </section>
 </ion-content>
 

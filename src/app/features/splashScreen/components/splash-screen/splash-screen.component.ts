@@ -10,16 +10,13 @@ import { UtilsService } from 'src/app/core/services/utils.service';
 })
 export class SplashScreenComponent
 {
-  public imageClass : string;
-  public showText : boolean;
 
   constructor(private utilsService : UtilsService,
     private platform : Platform)
     {
-      this.imageClass = 'slide-out-bottom';
-      this.showText = false;
-    }
 
+    }
+//jello-horizontal
     ionViewDidEnter()
     {
       if(!this.utilsService.splashScreenHasShown)
@@ -29,20 +26,10 @@ export class SplashScreenComponent
           this.utilsService.splashScreenHasShown = true;
           SplashScreen.hide().then(()=>
           {
-            setTimeout(()=>
-            {
-              this.imageClass = 'slide-in-top';
-              this.showText = true;
-              setTimeout(()=>
-              {
-              },100);
-
-            },500)
-
 
             setTimeout(() => 
             {
-              this.utilsService.changeRoute('/auth')
+            //  this.utilsService.changeRoute('/auth')
             }, 3000);
           })
         });
