@@ -1,3 +1,7 @@
+ion-content{
+  --background: #024050;
+}
+
 .splashScreen
 {
   width: 100%;
@@ -18,7 +22,7 @@ h1, h2
 {
   margin-top: 0px;
   margin-bottom: 0px;
-  -webkit-text-stroke-width: 2px;
+  //-webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
   //-webkit-text-stroke-color: var(--ion-color-secondary);
   color: var(--ion-color-primary);
@@ -35,26 +39,6 @@ h2
   font-size: 2.5rem;
 }
 
-.iconContainer
-{
-  aspect-ratio: 1/1;
-  max-width: 75%;
-  max-height: 75%;
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 17%;
-  z-index: 1;
-}
-
-img
-{
-  max-width: 95%;
-  max-height: 95%;
-  border-radius: 15%;
-}
 
 .jello-horizontal {
 	-webkit-animation: jello-horizontal 0.9s 1.5s infinite both;

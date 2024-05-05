@@ -1,0 +1,24 @@
+<form [formGroup]="this.loginForm">
+
+  <ion-input formControlName="email" name="email" type="email" inputmode="email" placeholder="Ingrese su email" clearInput="true"
+  label="Email" label-placement="floating" fill="outline" (ionInput)="this.changeEmailErrorText()"></ion-input>
+
+  @if(this.emailErrorText !== '') 
+  {
+    <ion-note>{{this.emailErrorText}}</ion-note>
+  }
+
+  <ion-input formControlName="password" name="password" inputmode="password" [type]="this.passwordInputType" placeholder="Ingrese una clave válida" clearInput="true" clearOnEdit="false"
+  label="Clave" label-placement="floating" fill="outline" (ionInput)="this.changePasswordErrorText()"></ion-input>
+
+
+  @if(this.passwordErrorText !== '') 
+  {
+    <ion-note>{{this.passwordErrorText}}</ion-note>
+  }
+
+  <ion-button (click)="this.submitData()" class="logBtn" expand="block" fill="solid">
+    Iniciar sesión
+    <ion-icon slot="end" name="log-in"></ion-icon>
+  </ion-button>
+</form>
