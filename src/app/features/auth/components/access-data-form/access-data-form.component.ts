@@ -36,7 +36,7 @@ export class AccessDataFormComponent implements OnChanges
 
     this.loginForm = inject(FormBuilder).group({
       email: ['', [Validators.required, Validators.email, Validators.maxLength(60)]],
-      password: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(30)]],
+      password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(30)]],
     })
 
     this.submitDataEventEmitter = new EventEmitter<MyForm<MyUserAccessData>>();
@@ -88,7 +88,7 @@ export class AccessDataFormComponent implements OnChanges
         {
           if(errors.maxlength)
             {
-              this.emailErrorText = 'Se superaron los 40 caracteres';
+              this.emailErrorText = 'Se superaron los 6 caracteres';
             }
         }
       }
