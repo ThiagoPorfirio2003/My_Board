@@ -1,0 +1,125 @@
+<ion-content [fullscreen]="true">
+  
+  
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button (click)="this.signOut()">
+      <ion-icon name="log-out"></ion-icon>    
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="center" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <img [src]="this.currentLanguagePath">
+    </ion-fab-button>
+  
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="this.changeCurrentLanguaje(1)"><img src="../../../../assets/images/flags/spain.png"></ion-fab-button>
+      <ion-fab-button (click)="this.changeCurrentLanguaje(2)"><img src="../../../../assets/images/flags/uk.png"></ion-fab-button>
+      <ion-fab-button (click)="this.changeCurrentLanguaje(3)"><img src="../../../../assets/images/flags/portugal.png"></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <img [src]="this.currentTopicPath">
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="this.changeCurrentTopic(1)"><img src="../../../../assets/images/topics/dog.png"></ion-fab-button>
+      <ion-fab-button (click)="this.changeCurrentTopic(2)"><img src="../../../../assets/images/topics/colorPalet.png"></ion-fab-button>
+      <ion-fab-button (click)="this.changeCurrentTopic(3)"><img src="../../../../assets/images/topics/number.png"></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <div class="screen">
+    <div class="row">
+      <div class="col" style="background: red;">
+        <ion-button>
+          @if(this.currentTopic === 1) 
+          {
+            <img class="animalImg" src="../../../../assets/images/animals/dog.png">
+          }
+  
+          @if(this.currentTopic === 3) 
+          {
+            <h1>1</h1>
+          }
+        </ion-button>
+      </div>
+
+      <div class="col" style="background: green;">
+        <ion-button>
+          @if(this.currentTopic === 1) 
+          {
+            <img class="animalImg" src="../../../../assets/images/animals/lion.png">
+          }
+  
+          @if(this.currentTopic === 3) 
+          {
+            <h1>2</h1>
+          }
+        </ion-button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col" style="background: white;">
+        <ion-button>
+          @if(this.currentTopic === 1) 
+          {
+            <img class="animalImg" src="../../../../assets/images/animals/monkey.png">
+          }
+  
+          @if(this.currentTopic === 3) 
+          {
+            <h1>3</h1>
+          }
+        </ion-button>
+      </div>
+
+      <div class="col" style="background: blue;">
+        <ion-button>
+          @if(this.currentTopic === 1) 
+          {
+            <img class="animalImg" src="../../../../assets/images/animals/cat.png">
+          }
+  
+          @if(this.currentTopic === 3) 
+          {
+            <h1>4</h1>
+          }
+        </ion-button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col" style="background:#ffee32;">
+        <ion-button>
+          @if(this.currentTopic === 1) 
+          {
+            <img class="animalImg" src="../../../../assets/images/animals/horse.png">
+          }
+  
+          @if(this.currentTopic === 3) 
+          {
+            <h1>5</h1>
+          }
+        </ion-button>
+      </div>
+      
+      <div class="col" style="background: #99582a">
+        <ion-button>
+          @if(this.currentTopic === 1) 
+          {
+            <img class="animalImg" src="../../../../assets/images/animals/elephant.png">
+          }
+  
+          @if(this.currentTopic === 3) 
+          {
+            <h1>6</h1>
+          }
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

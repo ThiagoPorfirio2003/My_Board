@@ -58,7 +58,7 @@ export class AuthPage{
         {
           loginStatus.success = true;
           this.authService.logMyUser(doc.data() as MyUser);
-          this.utilsServices.changeRoute('/menu');
+          this.utilsServices.changeRoute('/principal');
         }
       }
       catch(error : any)

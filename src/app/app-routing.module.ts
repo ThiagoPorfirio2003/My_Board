@@ -16,14 +16,14 @@ const routes: Routes = [
     canActivate: [canGoSplashGuard]
   },
   {
+    path: 'principal',
+    loadChildren: () => import('./features/principal/page/principal.module').then( m => m.PrincipalPageModule)
+  },
+  {
     path: '',
     redirectTo: 'splashScreen',
     pathMatch: 'full'
-  },
-  {
-    path: 'menu',
-    loadChildren: () => import('./features/menu/menu.module').then( m => m.MenuPageModule)
-  },
+  }
 ];
 
 @NgModule({
