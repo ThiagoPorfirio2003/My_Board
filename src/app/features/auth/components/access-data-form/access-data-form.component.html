@@ -1,7 +1,7 @@
 <form [formGroup]="this.loginForm">
 
-  <ion-input formControlName="email" name="email" type="email" inputmode="email" placeholder="Ingrese su email" clearInput="true"
-  label="Email" label-placement="floating" fill="outline" (ionInput)="this.changeEmailErrorText()"></ion-input>
+  <ion-input formControlName="email" name="email" type="email" inputmode="email" placeholder="Ingrese su mail" clearInput="true"
+  label="Mail" label-placement="floating" fill="outline" (ionInput)="this.changeEmailErrorText()"></ion-input>
 
   @if(this.emailErrorText !== '') 
   {

@@ -21,7 +21,7 @@ export class HeaderComponent
 
     if(authService.isLogued)
     {
-      this.profile = TranslateEnums.transalteProfile(this.authService.myUser.profile)
+      this.profile = TranslateEnums.transalteProfile(this.authService.myUser.profile);
     }
   }
 

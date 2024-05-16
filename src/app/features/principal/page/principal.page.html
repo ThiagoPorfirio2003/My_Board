@@ -1,6 +1,4 @@
-<ion-content [fullscreen]="true">
-  
-  
+<ion-content [fullscreen]="true">  
   <ion-fab vertical="top" horizontal="start" slot="fixed">
     <ion-fab-button (click)="this.signOut()">
       <ion-icon name="log-out"></ion-icon>    
@@ -9,7 +7,7 @@
 
   <ion-fab vertical="center" horizontal="start" slot="fixed">
     <ion-fab-button>
-      <img [src]="this.currentLanguagePath">
+      <img [src]="this.currentFlagPath">
     </ion-fab-button>
   
     <ion-fab-list side="top">
@@ -34,7 +32,7 @@
   <div class="screen">
     <div class="row">
       <div class="col" style="background: red;">
-        <ion-button>
+        <ion-button (click)="this.makeSound(1)">
           @if(this.currentTopic === 1) 
           {
             <img class="animalImg" src="../../../../assets/images/animals/dog.png">
@@ -48,7 +46,7 @@
       </div>
 
       <div class="col" style="background: green;">
-        <ion-button>
+        <ion-button (click)="this.makeSound(2)">
           @if(this.currentTopic === 1) 
           {
             <img class="animalImg" src="../../../../assets/images/animals/lion.png">
@@ -64,7 +62,7 @@
 
     <div class="row">
       <div class="col" style="background: white;">
-        <ion-button>
+        <ion-button (click)="this.makeSound(3)">
           @if(this.currentTopic === 1) 
           {
             <img class="animalImg" src="../../../../assets/images/animals/monkey.png">
@@ -78,7 +76,7 @@
       </div>
 
       <div class="col" style="background: blue;">
-        <ion-button>
+        <ion-button (click)="this.makeSound(4)">
           @if(this.currentTopic === 1) 
           {
             <img class="animalImg" src="../../../../assets/images/animals/cat.png">
@@ -94,7 +92,7 @@
 
     <div class="row">
       <div class="col" style="background:#ffee32;">
-        <ion-button>
+        <ion-button (click)="this.makeSound(5)">
           @if(this.currentTopic === 1) 
           {
             <img class="animalImg" src="../../../../assets/images/animals/horse.png">
@@ -108,7 +106,7 @@
       </div>
       
       <div class="col" style="background: #99582a">
-        <ion-button>
+        <ion-button (click)="this.makeSound(6)">
           @if(this.currentTopic === 1) 
           {
             <img class="animalImg" src="../../../../assets/images/animals/elephant.png">
