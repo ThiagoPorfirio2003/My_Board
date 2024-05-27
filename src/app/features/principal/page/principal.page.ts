@@ -202,6 +202,10 @@ export class PrincipalPage
 
   public signOut()
   {
+    this.authService.logOut();
+    this.utilsService.changeRoute('/auth');
+
+    /*
     this.utilsService.showSweet({title:'¿Seguro que desea salír?',
     showDenyButton: true, denyButtonText: 'No', denyButtonColor: '#606C38',
     confirmButtonText: 'Sí', confirmButtonColor: '#BC6C25',
@@ -218,6 +222,7 @@ export class PrincipalPage
         this.utilsService.changeRoute('/auth')
       } 
     })
+    */
   }
 
 }

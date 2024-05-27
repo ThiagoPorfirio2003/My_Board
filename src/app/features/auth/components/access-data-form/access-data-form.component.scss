@@ -9,8 +9,8 @@ ion-item {
 }
 */
 ion-input{
-    --color:var(--ion-color-primary);
-    //font-size: 24px;
+    --color: var(--ion-color-primary);
+    --border-color: #BC6C25 !important;	    
     font-family: var(--font-oficial);
     //--ion-margin-top: 50px ;
     margin-top: 5%;
@@ -19,8 +19,9 @@ ion-input{
 ion-note {
     color: #c5000f;
     margin-top: 10%;
-    margin-left: 10%;
+    //margin-left: 10%;
     font-family: var(--font-oficial);
+    font-size: 1.1rem;
 }
 
 
