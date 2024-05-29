@@ -48,7 +48,7 @@ export class AccessDataFormComponent implements OnChanges
   {
     this.loginForm.setValue(this.fastUser);
     this.emailErrorText = '';
-    this.passwordErrorText = ''
+    this.passwordErrorText = '';
   }
 
   public showHidePassword()
